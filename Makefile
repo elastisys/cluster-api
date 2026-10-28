@@ -223,7 +223,7 @@ TILT_PREPARE_BIN := tilt-prepare
 TILT_PREPARE := $(abspath $(TOOLS_BIN_DIR)/$(TILT_PREPARE_BIN))
 
 # Define Docker related variables. Releases should modify and double check these vars.
-REGISTRY ?= gcr.io/$(shell gcloud config get-value project)
+REGISTRY ?= ghcr.io/elastisys
 PROD_REGISTRY ?= registry.k8s.io/cluster-api
 
 STAGING_REGISTRY ?= gcr.io/k8s-staging-cluster-api
@@ -259,7 +259,7 @@ CAPI_KIND_CLUSTER_NAME ?= capi-test
 
 # It is set by Prow GIT_TAG, a git-based tag of the form vYYYYMMDD-hash, e.g., v20210120-v0.3.10-308-gc61521971
 
-TAG ?= dev
+TAG ?= v1.13.7-wlkn1
 ARCH ?= $(shell go env GOARCH)
 ALL_ARCH ?= amd64 arm arm64 ppc64le s390x
 

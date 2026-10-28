@@ -7,5 +7,5 @@ spec:
   template:
     spec:
       containers:
-      - image: gcr.io/k8s-staging-cluster-api/cluster-api-controller:main
+      - image: ghcr.io/elastisys/cluster-api-controller-amd64:v1.13.7-wlkn1
         name: manager

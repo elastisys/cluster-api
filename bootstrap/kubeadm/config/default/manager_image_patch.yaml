@@ -7,5 +7,5 @@ spec:
   template:
     spec:
       containers:
-        - image: gcr.io/k8s-staging-cluster-api/kubeadm-bootstrap-controller:main
+        - image: ghcr.io/elastisys/kubeadm-bootstrap-controller-amd64:v1.13.7-wlkn1
           name: manager
